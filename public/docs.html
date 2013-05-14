@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pictionary - The Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".docs-sidebar">
+
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="brand" href="index.html"><strong>Pictionary</strong></a>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="docs.html">Documentation</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+
+  <header class="jumbotron subhead">
+    <div class="container">
+      <h1>Documentation</h1>
+    </p>
+    <p class="lead">If you can't find the information your looking for here it's not worth knowing!
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="span3 docs-sidebar">
+        <ul class="nav nav-list docs-sidenav affix-top">
+          <li><a href="#intro">Introduction</a></li>
+          <li><a href="#install">Installation</a></li>
+          <li><a href="#server">Server setup</a></li>
+          <li><a href="#join">Join a game</a></li>
+          <li><a href="#gameplay">Gameplay</a></li>
+          <li><a href="#scoring">Scoring system</a></li>
+        </ul>
+      </div>
+
+      <div class="span9">
+        <section id="intro">
+          <div class="page-header">
+            <h1>Introduction</h1>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, consectetur, distinctio rem modi necessitatibus provident similique quam dolorum eligendi dolore voluptate magnam eveniet quaerat magni soluta quas dicta molestias quia.</p>
+        </section>
+        <section id="install">
+          <div class="page-header">
+            <h1>Installation</h1>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores odit voluptas dolor temporibus eligendi accusantium molestias voluptatibus. Aut quaerat placeat provident aspernatur quas fugit voluptatem sit laborum in possimus.</p>
+        </section>
+        </section>
+        <section id="server">
+          <div class="page-header">
+            <h1>Server setup</h1>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, dolor?</p>
+          <pre>java -jar server/server &lt;host&gt; &lt;port&gt;</pre>
+        </section>
+        </section>
+        <section id="join">
+          <div class="page-header">
+            <h1>Join a game</h1>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, odit, sapiente dolor deleniti iure natus.</p>
+        </section>
+        </section>
+        <section id="gameplay">
+          <div class="page-header">
+            <h1>Gameplay</h1>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, mollitia, hic, voluptatum id excepturi aperiam magnam quod consectetur reprehenderit similique distinctio ad. Debitis distinctio blanditiis necessitatibus ex vel quo harum excepturi cum facere earum.</p>
+          <h2>Drawing</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, delectus, tempore, rerum laudantium numquam ipsam ducimus quas earum quidem sunt quos sint.</p>
+            <h3>Pen size</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <h3>Pen color</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quo accusamus doloribus?</p>
+          <h2>Guessing words</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum deleniti cum delectus eaque veniam!</p>
+          <h2>Winning the game</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum pariatur illum magni excepturi itaque deserunt dignissimos?</p>
+        </section>
+        <section id="scoring">
+          <div class="page-header">
+            <h1>Scoring system</h1>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, dignissimos, est dicta maxime ducimus sequi esse officiis dolores illum quidem voluptatibus nisi harum quaerat repellat eos doloribus delectus. Distinctio officia asperiores magnam quidem perferendis minus dicta natus nulla eaque ipsum.</p>
+        </section>
+
+      </div> 
+    </div>
+
+  </div> <!-- /container -->
+
+    <!-- Javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script>
+      $(function(){
+
+        var $window = $(window)
+
+        // side bar
+        $('.docs-sidenav').affix({
+          offset: {
+            top: function () { return $window.width() <= 980 ? 290 : 210 }
+            , bottom: 270
+          }
+        });
+      });
+    </script>
+</body>
+</html>
