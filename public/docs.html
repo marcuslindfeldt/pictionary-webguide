@@ -40,7 +40,6 @@
     <div class="row">
       <div class="span3 docs-sidebar">
         <ul class="nav nav-list docs-sidenav affix-top">
-          <li><a href="#intro">Introduction</a></li>
           <li><a href="#install">Installation</a></li>
           <li><a href="#server">Server setup</a></li>
           <li><a href="#join">Join a game</a></li>
@@ -49,52 +48,56 @@
         </ul>
       </div>
       <div class="span9">
-        <section id="intro">
-          <div class="page-header">
-            <h1>Introduction</h1>
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, consectetur, distinctio rem modi necessitatibus provident similique quam dolorum eligendi dolore voluptate magnam eveniet quaerat magni soluta quas dicta molestias quia.</p>
-        </section>
         <section id="install">
           <div class="page-header">
             <h1>Installation</h1>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi asperiores odit voluptas dolor temporibus eligendi accusantium molestias voluptatibus. Aut quaerat placeat provident aspernatur quas fugit voluptatem sit laborum in possimus.</p>
+          <p>No advanced installation is necessary. Simply fire up a server and let your friends join the fun. They will need to know the host address of your server, i.e. the IP-address. If you don't know it, click <a href="http://www.mittip.se">here</a> to find out.</p>
         </section>
         <section id="server">
           <div class="page-header">
             <h1>Server setup</h1>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, dolor?</p>
-          <pre>java -jar server/server &lt;host&gt; &lt;port&gt;</pre>
+          <p>Start the server by double clicking the executable jar file or from the command line by typing the following command in a terminal:</p>
+          <pre>java -jar pictionary-server &lt;port&gt;</pre>
         </section>
         <section id="join">
           <div class="page-header">
             <h1>Join a game</h1>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, odit, sapiente dolor deleniti iure natus.</p>
+          <p>Start the client by double clicking the executable jar file or from the command line by typing the following command in a terminal:</p>
+          <pre>java -jar pictionary-client.jar</pre>
+          <p>Fill in some connection details and a username</p>
+          <figure class="well">
+            <img alt="" class="img-polaroid" src="assets/img/connection_details.png" />
+            <figcaption class="muted">Connection details</figcaption>
+          </figure>
         </section>
         <section id="gameplay">
           <div class="page-header">
             <h1>Gameplay</h1>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, mollitia, hic, voluptatum id excepturi aperiam magnam quod consectetur reprehenderit similique distinctio ad. Debitis distinctio blanditiis necessitatibus ex vel quo harum excepturi cum facere earum.</p>
+          <p>The game will start when four people has connected to the server. The first one to connect will be the first one to draw.</p>
+          <figure class="well">
+            <img alt="" src="assets/img/app.gif" class="img-polaroid" />
+            <figcaption class="muted">Client application</figcaption>
+          </figure>
           <h2>Drawing</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, delectus, tempore, rerum laudantium numquam ipsam ducimus quas earum quidem sunt quos sint.</p>
-          <h3>Pen size</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <h3>Pen color</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quo accusamus doloribus?</p>
-          <h2>Guessing words</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum deleniti cum delectus eaque veniam!</p>
-          <h2>Winning the game</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum pariatur illum magni excepturi itaque deserunt dignissimos?</p>
+          <p>Drawing is easy. Just select a pen size using the slider and a color from the color bar and start drawing. Your opponents will be able to see the picture in realtime.</p>
+          <figure class="well">
+            <img alt="" class="img-polaroid" src="assets/img/colorbar.png" />
+            <figcaption class="muted">The colorbar</figcaption>
+          </figure>
         </section>
         <section id="scoring">
           <div class="page-header">
             <h1>Scoring system</h1>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, dignissimos, est dicta maxime ducimus sequi esse officiis dolores illum quidem voluptatibus nisi harum quaerat repellat eos doloribus delectus. Distinctio officia asperiores magnam quidem perferendis minus dicta natus nulla eaque ipsum.</p>
+          <figure class="well pull-right">
+            <img alt="" class="img-polaroid" src="assets/img/ranking.gif"/>
+            <figcaption class="muted">Ranking</figcaption>
+          </figure>
+          <p>Your opponents has to guess the correct word within sixty seconds, otherwise no points will be rewarded to either the player who guessed or the player drawing. The points will incrementally decrease as time passes and both the player drawing and the player who guessed the correct word will be awarded the same amount of points.</p>
         </section>
       </div> 
     </div>
@@ -120,4 +123,4 @@
       });
     </script>
   </body>
-</html>
+  </html>
